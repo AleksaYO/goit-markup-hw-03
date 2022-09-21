@@ -6,8 +6,33 @@
   --adress-color: #757575;
   --secondary-hover: #ffffff;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin: 0 auto; */
+}
+.header-container {
+  /* display: flex; */
+}
 /* --------------------------------------------- Шапка --------------------------------------------- */
+.header {
+  /* padding: 24px 215px; */
+  padding-top: 24px;
+  padding-right: 215px;
+  padding-bottom: 25px;
+  padding-left: 215px;
+}
 .header-logo {
   font-family: "Raleway", sens-serif;
   font-weight: 700;
@@ -16,6 +41,7 @@
   letter-spacing: 0.03em;
   color: var(--hover-color);
   text-decoration: none;
+  display: inline-block;
 }
 .span-header-logo {
   font-family: "Raleway", sens-serif;
@@ -24,9 +50,15 @@
   line-height: 1.19px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  display: inline-block;
+}
+.header-nav {
+  /* display: flex;
+  align-items: center; */
 }
 .header-list {
   list-style: none;
+  /* display: flex; */
 }
 .link {
   text-decoration: none;
@@ -44,7 +76,8 @@
   color: var(--hover-color);
 }
 .header-adress {
-  list-style: none;
+  /* list-style: none;
+  display: flex; */
 }
 .header-adress-link {
   text-decoration: none;
@@ -94,10 +127,10 @@
   cursor: pointer;
 }
 .hero-btn:hover {
-background-color: #188CE8;
+  background-color: #188ce8;
 }
 .hero-btn:focus {
-  background-color:#188CE8 ;
+  background-color: #188ce8;
 }
 .btn {
   cursor: pointer;
