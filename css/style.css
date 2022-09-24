@@ -207,7 +207,6 @@ p {
   list-style: none;
   display: flex;
   /* align-items: center; */
-  flex-basis: calc(100% / 4 - 30px);
   gap: 30px;
 }
 .advantages-h-three {
@@ -277,7 +276,6 @@ p {
   border-radius: 0px 0px 4px 4px;
   flex-wrap: wrap;
   max-width: 270px;
-
 }
 .team-h-two {
   font-family: "Roboto";
