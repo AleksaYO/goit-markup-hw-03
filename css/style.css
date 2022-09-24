@@ -23,9 +23,14 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* section {
+  outline: 2px solid red;
+} */
 /* --------------------------------------------- Шапка --------------------------------------------- */
 .header {
-  padding: 25px 215px;
+  /* padding: 25px 215px; */
+  padding-right: 215px;
+  padding-left: 215px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -70,6 +75,9 @@ p {
   line-height: 1.14px;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link:hover {
   color: var(--hover-color);
@@ -82,6 +90,7 @@ p {
   display: flex;
   margin-left: auto;
   gap: 50px;
+  align-items: center;
 }
 .header-adress-link {
   text-decoration: none;
@@ -91,6 +100,9 @@ p {
   line-height: 1.14px;
   letter-spacing: 0.02em;
   color: var(--adress-color);
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-adress-link:hover {
   color: var(--hover-color);
@@ -177,8 +189,26 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-item {
+  max-width: 270px;
+}
+
+.advantages-container {
+  margin: 0 auto;
+}
+
 .advantages-list {
   list-style: none;
+  display: flex;
+  /* align-items: center; */
+  flex-basis: calc(100% / 4 - 30px);
+  gap: 30px;
 }
 .advantages-h-three {
   font-family: "Roboto";
@@ -188,7 +218,9 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
+
 .advantages-text {
   font-family: "Roboto";
   font-weight: 400;
@@ -200,7 +232,17 @@ p {
 /* --------------------------------------------- Чим ми займаємося --------------------------------------------- */
 .about-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
+
+.about-container {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 94px;
+}
+
 .about-h-two {
   font-family: "Roboto";
   font-weight: 700;
@@ -209,16 +251,33 @@ p {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
 }
 /* --------------------------------------------- Команда --------------------------------------------- */
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.team-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .team-list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  outline: 2px solid red;
 }
 .team-item {
   background: var(--secondary-hover);
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  flex-wrap: wrap;
+  max-width: 270px;
+
 }
 .team-h-two {
   font-family: "Roboto";
@@ -228,6 +287,7 @@ p {
   /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
 }
 .team-h-three {
   font-family: "Roboto";
@@ -235,6 +295,7 @@ p {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 .team-text {
   font-family: "Roboto";
@@ -243,11 +304,19 @@ p {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--adress-color);
+  margin-top: 10px;
 }
 /* --------------------------------------------- Укриття --------------------------------------------- */
 .footer {
   background-color: #2f303a;
 }
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
 .footer-logo {
   font-family: "Raleway", sens-serif;
   font-weight: 700;
@@ -256,6 +325,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--hover-color);
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .span-footer-logo {
   color: var(--secondary-hover);
@@ -266,6 +337,11 @@ address {
 .footer-list {
   list-style: none;
 }
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .map {
   font-family: "Roboto";
   font-weight: 400;
