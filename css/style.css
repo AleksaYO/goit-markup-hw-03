@@ -18,14 +18,23 @@ p {
   padding: 0px;
   border: 0px;
 }
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-/* section {
-  outline: 2px solid red;
-} */
+section {
+  /* outline: 2px solid red; */
+}
 /* --------------------------------------------- Шапка --------------------------------------------- */
 .header {
   /* padding: 25px 215px; */
@@ -69,7 +78,7 @@ p {
 }
 .link {
   text-decoration: none;
-  font-family: "Roboto", sens-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -94,7 +103,7 @@ p {
 }
 .header-adress-link {
   text-decoration: none;
-  font-family: "Roboto", sens-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -196,7 +205,7 @@ p {
 }
 
 .advantages-item {
-  max-width: 270px;
+  width: 270px;
 }
 
 .advantages-container {
@@ -268,7 +277,7 @@ p {
   list-style: none;
   display: flex;
   gap: 30px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .team-item {
   background: var(--secondary-hover);
@@ -329,9 +338,7 @@ p {
 .span-footer-logo {
   color: var(--secondary-hover);
 }
-address {
-  font-style: normal;
-}
+
 .footer-list {
   list-style: none;
 }
@@ -369,11 +376,57 @@ address {
   color: var(--hover-color);
 }
 /* --------------------------------------------- Страница Портфолио --------------------------------------------- */
+
 .works {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.works-list {
+
+.works-container {
+  /* display: flex; */
+  margin: 0 auto;
+}
+.works-list-top {
   list-style: none;
+  display: flex;
+  gap: 8px;
+  /* align-items: center; */
 }
+
+.button-all {
+  padding: 6px 22px;
+}
+.button-web {
+  padding: 6px 22px;
+}
+.button-add {
+  padding: 6px 22px;
+}
+.button-design {
+  padding: 6px 22px;
+}
+.button-mark {
+  padding: 6px 22px;
+}
+
+.works-list-bottom {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works-item-bottom {
+  /* align-items: center; */
+  /* border: 1px solid #eeeeee; */
+}
+
+.works-list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .works-h-two {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -381,10 +434,29 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin-bottom: 4px;
 }
-a {
-  text-decoration: none;
+
+.works-list-card {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
 }
+
+.cards {
+  /* border: 1px solid #EEEEEE; */
+}
+
+.border-text-card {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  /* width: 322px; */
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 20px 24px;
+}
+
 .works-text {
   font-family: "Roboto";
   font-weight: 400;
@@ -393,3 +465,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--adress-color);
 }
+
+/* .photo {
+  margin-bottom: 20px;
+} */
