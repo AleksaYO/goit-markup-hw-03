@@ -27,31 +27,34 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+section {
+  /* outline: 2px solid red; */
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
-section {
-  /* outline: 2px solid red; */
-}
+
 /* --------------------------------------------- Шапка --------------------------------------------- */
 .header {
   /* padding: 25px 215px; */
-  padding-right: 215px;
-  padding-left: 215px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
-  margin: 0 auto;
   /* justify-content: space-between; */
 }
 .header-logo {
   font-family: "Raleway", sens-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
   text-decoration: none;
@@ -62,7 +65,7 @@ section {
   font-family: "Raleway", sens-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: inline-block;
@@ -81,7 +84,7 @@ section {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   display: inline-block;
@@ -106,7 +109,7 @@ section {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--adress-color);
   display: inline-block;
@@ -139,13 +142,14 @@ section {
   text-transform: uppercase;
   color: var(--secondary-hover);
   text-align: center;
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 .hero-btn {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--secondary-hover);
   background: var(--hover-color);
@@ -208,10 +212,6 @@ section {
   width: 270px;
 }
 
-.advantages-container {
-  margin: 0 auto;
-}
-
 .advantages-list {
   list-style: none;
   display: flex;
@@ -238,6 +238,11 @@ section {
   color: var(--adress-color);
 }
 /* --------------------------------------------- Чим ми займаємося --------------------------------------------- */
+
+.about {
+  padding-bottom: 94px;
+}
+
 .about-list {
   list-style: none;
   display: flex;
@@ -246,9 +251,7 @@ section {
 }
 
 .about-container {
-  margin: 0 auto;
   text-align: center;
-  padding-bottom: 94px;
 }
 
 .about-h-two {
@@ -316,12 +319,8 @@ section {
 /* --------------------------------------------- Укриття --------------------------------------------- */
 .footer {
   background-color: #2f303a;
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
 }
 
 .footer-logo {
@@ -384,13 +383,14 @@ section {
 
 .works-container {
   /* display: flex; */
-  margin: 0 auto;
 }
 .works-list-top {
   list-style: none;
   display: flex;
   gap: 8px;
-  /* align-items: center; */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button-all {
@@ -423,8 +423,6 @@ section {
 
 .works-list-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 .works-h-two {
@@ -437,14 +435,10 @@ section {
   margin-bottom: 4px;
 }
 
-.works-list-card {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: 30px; */
-}
+
 
 .cards {
-  /* border: 1px solid #EEEEEE; */
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .border-text-card {
@@ -466,6 +460,3 @@ section {
   color: var(--adress-color);
 }
 
-/* .photo {
-  margin-bottom: 20px;
-} */
